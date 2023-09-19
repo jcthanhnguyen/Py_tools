@@ -1,0 +1,21 @@
+**** Port scanner description ****
+
+* Main purpose: Scan ports status of target(IP, domain name, url)
+
+* Tools overview:
+	
+	# Scan using 'socket', 'try except' to identify status of ports
+	
+	# 2 Main Functions:
+		- Scan specific ports that will be entered by user, split by spaces
+		- Scan series of ports:
+			+ Enter start port and end port.
+			+ Scan every port from start to end.
+	
+	#Tool can scan many targets, enter all targets, split by spaces
+
+* Limitation:
+	# Very basic tool, only 1 main feature
+	# Performance is slow, not optimal
+	# The interface is not done well
+	
