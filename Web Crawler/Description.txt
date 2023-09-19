@@ -1,0 +1,30 @@
+**** Web Crawler ****
+
+* Main purpose
+	Crawl through a url and sub-urls to collect emails.
+	
+* Tool overview
+	# Method:
+		- Use urllib to establish connection.
+		- Use beautiful soup to get 'a' tags and use regex to get the url.
+		- Use regex to get emails after read and decode (because many websites don't put email address in 'a' tag -> hard to know which tag to get if using beautiful soup).
+		- Use recursion to crawl through each layer of url.
+		
+			Example: Crawl through 2 layers of https://www.target.com
+			
+							target              Layer 1
+							/     \
+						sub_url1    sub_url2    Layer 2
+						
+	# User input:
+		- Target url (only capable of 1 target).
+		- Number of layers to crawl.
+							
+	# Output:
+		- Each url, status of url connection, emails in url.
+		
+* Limitation:
+	# Too simple, performance is slow.
+	# Input Validation is not done well.
+	# The regex to find email and url are not optimal.
+	# Display of each layer is not organized.
