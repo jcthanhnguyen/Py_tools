@@ -1,0 +1,18 @@
+**** MAC address changer ****
+
+* Main purpose
+	change the MAC address of Linux machine by using only 1 command.
+
+* Tool overview
+	Method: 
+		- Use subprocess module in python to automate the Linux command to change the MAC address.
+		- Use optparse to add options to the command, add the arguments of interface and new MAC address.	
+		- Use subprocess, and re module to get the MAC address after being changed to compare. Then output a result of success or not.
+
+		Example of the tool:
+			$python3 mac_changer.py --help (to display help menu)
+			$python3 mac_changer.py -i eth0 -m 44:22:55:77:22:99 (change MAC address of eth0 to 44:22:55:77:22:99)
+
+* Limitation:
+	# Does not support Windows
+	# Not a new feature, just combine 3 commands in Linux into 1 command
