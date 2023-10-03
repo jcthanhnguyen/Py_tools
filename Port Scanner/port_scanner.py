@@ -36,7 +36,7 @@ def scan(target, port):
 		print(termcolor.colored('[+]', 'green') + ' Port Opened', port)
 		sock.close()
 	except:
-		print(termcolor.colored('[-]', 'red') + ' Port Closed', port)
+		print(termcolor.colored('[-]', 'red') + ' Port Closed/Filterd', port)
 
 # scan 1 target, scan serie of ports
 
